@@ -1,0 +1,89 @@
+@import "variables";
+@import 'fonts';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+padding:2rem;
+margin:0;
+}
+
+p, h2, picture {
+margin:0;
+padding:0;
+}
+
+/* CARDS */
+.card {
+  font-family: 'Museo';
+  border: 1px solid rgb(0, 85, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-block-end: 1rem;
+
+  &__id {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+
+    h2 {
+      display: flex;
+      flex-direction: column;
+      margin-block-end: 0.5rem;
+      font-size: 1.15rem;
+    }
+  }
+
+  &__thumbnail {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid red;
+
+    img {
+      max-height: 4.25rem;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__city {
+    color: $color__secondary;
+  }
+}
+
+.contact {
+  &__title {
+    text-align: center;
+    font-family: 'League Spartan Variable';
+    text-transform: uppercase;
+    font-weight: 1400;
+    font-size: 2rem;
+    color: $color__primary;
+  }
+
+  &__baseline {
+    font-family: 'Museo';
+    font-size: 1.5rem;
+    margin-inline:5rem;
+    text-align: center;
+  }
+
+  &__desc {
+    font-family: 'Museo';
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  form {
+    /* Style des astérisques pour les champs obligatoires */
+    .form-group label::after {
+      content: '*';
+      color: red;
+      margin-left: 4px;
+    }
+    }
+}
+
