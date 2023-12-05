@@ -1,18 +1,22 @@
 @import "variables";
 @import 'fonts';
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 body {
-padding:2rem;
-margin:0;
+  padding: 3rem;
+  margin: 0;
 }
 
-p, h2, picture {
-margin:0;
-padding:0;
+p,
+h2,
+picture {
+  margin: 0;
+  padding: 0;
 }
 
 /* CARDS */
@@ -55,11 +59,16 @@ padding:0;
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+
   &__title {
     text-align: center;
     font-family: 'League Spartan Variable';
     text-transform: uppercase;
-    font-weight: 1400;
+    font-weight: 750;
     font-size: 2rem;
     color: $color__primary;
   }
@@ -67,23 +76,22 @@ padding:0;
   &__baseline {
     font-family: 'Museo';
     font-size: 1.5rem;
-    margin-inline:5rem;
+    margin-inline: 5rem;
+    font-weight: 700;
     text-align: center;
   }
 
   &__desc {
-    font-family: 'Museo';
+    font-family: 'Maven Pro';
     text-align: center;
     line-height: 1.5;
+    margin-inline: 2rem;
   }
 
-  form {
-    /* Style des astérisques pour les champs obligatoires */
-    .form-group label::after {
-      content: '*';
-      color: red;
-      margin-left: 4px;
-    }
-    }
+  .contact__form {
+    font-family: 'Maven Pro';
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
-

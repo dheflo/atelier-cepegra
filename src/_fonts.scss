@@ -1,9 +1,9 @@
 /* League Spartan variable*/
 @font-face {
   font-family: 'League Spartan Variable';
-  src: url('/dist/assets/fonts/LeagueSpartanVariable.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+  src: url('/dist/assets/fonts/LeagueSpartanVariable.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-variation-settings: "wght" 200, "wght" 900;
 }
 
 /* Museo*/
@@ -16,3 +16,11 @@
   font-style: normal;
 }
 
+/* Maven Pro */
+@font-face {
+  font-family: 'Maven Pro';
+  src: url('/dist/assets/fonts/MavenPro-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wght" 400, "wght" 900;
+}

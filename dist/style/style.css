@@ -1,11 +1,10 @@
-@charset "UTF-8";
 /* COLOR */
 /* League Spartan variable*/
 @font-face {
   font-family: "League Spartan Variable";
-  src: url("/dist/assets/fonts/LeagueSpartanVariable.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+  src: url("/dist/assets/fonts/LeagueSpartanVariable.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-variation-settings: "wght" 200, "wght" 900;
 }
 /* Museo*/
 @font-face {
@@ -14,16 +13,28 @@
   font-weight: normal;
   font-style: normal;
 }
-*, *:before, *:after {
+/* Maven Pro */
+@font-face {
+  font-family: "Maven Pro";
+  src: url("/dist/assets/fonts/MavenPro-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wght" 400, "wght" 900;
+}
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 body {
-  padding: 2rem;
+  padding: 3rem;
   margin: 0;
 }
 
-p, h2, picture {
+p,
+h2,
+picture {
   margin: 0;
   padding: 0;
 }
@@ -62,11 +73,17 @@ p, h2, picture {
   color: hsl(253, 23%, 34%);
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
 .contact__title {
   text-align: center;
   font-family: "League Spartan Variable";
   text-transform: uppercase;
-  font-weight: 1400;
+  font-weight: 750;
   font-size: 2rem;
   color: hsl(248, 78%, 60%);
 }
@@ -74,18 +91,18 @@ p, h2, picture {
   font-family: "Museo";
   font-size: 1.5rem;
   margin-inline: 5rem;
+  font-weight: 700;
   text-align: center;
 }
 .contact__desc {
-  font-family: "Museo";
+  font-family: "Maven Pro";
   text-align: center;
   line-height: 1.5;
+  margin-inline: 2rem;
 }
-.contact form {
-  /* Style des astérisques pour les champs obligatoires */
-}
-.contact form .form-group label::after {
-  content: "*";
-  color: red;
-  margin-left: 4px;
+.contact .contact__form {
+  font-family: "Maven Pro";
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }/*# sourceMappingURL=style.css.map */
