@@ -5,145 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/dist/style/style.min.css">
+
   <title>Speaker Edition 2023</title>
 </head>
 
-
 <main>
- 
   <section class="speakers">
      <!----- ORATEURS ----->
     <!-- Chris Coyier -->
-    <section class="card">
+    <section class="card card--inactive">
       <div class="card__id">
-        <h2>Chris <span>Coyier</span></h2>
+        <h2>Chris<span class="card__lastname">Coyier</span></h2>
         <p class="card__city">Milwaukee, WI</p>
       </div>
       <picture class="card__thumbnail">
         <img src="/dist/assets/orators/chris@3x.jpg" alt="Chris Coyier">
       </picture>
     </section>
+
+    <section class="card card--active">
+      <div class="card__id card__id--active">
+        <h2>Chris Coyier</h2>
+        <div class="card__offline">
+          <p class="card__offline--title">Going Offline</p>
+          <p class="card__offline--text">You can re-visit my Web site even when you're not connected to the Internet</p>
+        </div>
+      
+        <p class="card__info">
+          <span class="card__info--time"><span class="icon icon-schedule"></span> 10h15 | R2</span>
+          <a class="card__info--cta" href="#">About</a>
+        </p>
+    </section>
     <!-- Sara Soueidan -->
     <section class="card">
       <div class="card__id">
-        <h2>Sara <span>Soueidan</span></h2>
+        <h2>Sara <span> Soueidan</span></h2>
         <p class="card__city">Lebanon</p>
       </div>
       <picture class="card__thumbnail">
         <img src="/dist/assets/orators/sara@3x.jpg" alt="Sara Soueidan">
       </picture>
     </section>
-
-    <!-- Eric Meyer -->
-    <section class="card">
-      <div class="card__id">
-        <h2>Eric <span>Meyer</span></h2>
-        <p class="card__city">Cleveland, OH</p>
-      </div>
-      <picture class="card__thumbnail">
-        <img src="/dist/assets/orators/eric@3x.jpg" alt="Chris Coyier">
-      </picture>
-    </section>
-
-    <!-- Lea Verou -->
-    <section class="card">
-      <div class="card__id">
-        <h2>Lea <span>Verou</span></h2>
-        <p class="card__city">Cambridge, MA</p>
-      </div>
-      <picture class="card__thumbnail">
-        <img src="/dist/assets/orators/lea@3x.jpg" alt="Lea Verou">
-      </picture>
-    </section>
-
-    <!-- Shirley Wu -->
-    <section class="card">
-      <div class="card__id">
-        <h2>Shirley <span>Wu</span></h2>
-        <p class="card__city">San Francisco, CA</p>
-      </div>
-      <picture class="card__thumbnail">
-        <img src="/dist/assets/orators/shirley@3x.jpg" alt="Shirley Wu">
-      </picture>
-    </section>
-
-    <!-- Luke Wroblewski -->
-    <section class="card">
-      <div class="card__id">
-        <h2>Luke <span>Wroblewski</span></h2>
-        <p class="card__city">San Francisco, CA</p>
-      </div>
-      <picture class="card__thumbnail">
-        <img src="/dist/assets/orators/luke@3x.jpg" alt=" Luke Wroblewski">
-      </picture>
-    </section>
-
-    <!-- Nicolas Gallagher -->
-    <section class="card">
-      <div class="card__id">
-        <h2>Nicolas <span>Gallagher</span></h2>
-        <p class="card__city">San Francisco, CA</p>
-      </div>
-      <picture class="card__thumbnail">
-        <img src="/dist/assets/orators/nico@3x.jpg" alt="Nicolas Gallagher">
-      </picture>
-    </section>
-
-    <!-- Rachel Andrew -->
-    <section class="card">
-      <div class="card__id">
-        <h2>Rachel <span>Andrew</span></h2>
-        <p class="card__city">Bristol, UK</p>
-      </div>
-      <picture class="card__thumbnail">
-        <img src="/dist/assets/orators/rachel@3x.jpg" alt="Rachel Andrew">
-      </picture>
-    </section>
-
-    <!-- Stephen Hay -->
-    <section class="card">
-      <div class="card__id">
-        <h2>Stephen <span>Hay</span></h2>
-        <p class="card__city">Leeuwarden, NL</p>
-      </div>
-      <picture class="card__thumbnail">
-        <img src="/dist/assets/orators/stephen@3x.jpg" alt="Stephen Hay">
-      </picture>
-    </section>
-
-    <!-- Paul Irish -->
-    <section class="card">
-      <div class="card__id">
-        <h2>Paul <span>Irish</span></h2>
-        <p class="card__city">Palo Alto, CA</p>
-      </div>
-      <picture class="card__thumbnail">
-        <img src="/dist/assets/orators/paul@3x.jpg" alt="Paul Irish">
-      </picture>
-    </section>
-
-    <!-- Nicole Sullivan -->
-    <section class="card">
-      <div class="card__id">
-        <h2>Nicole <span>Sullivan</span></h2>
-        <p class="card__city">San Francisco, CA</p>
-      </div>
-      <picture class="card__thumbnail">
-        <img src="/dist/assets/orators/nicole@3x.jpg" alt="Nicole Sullivan">
-      </picture>
-    </section>
-
-    <!-- Brad Frost -->
-    <section class="card">
-      <div class="card__id">
-        <h2>Brad <span>Frost</span></h2>
-        <p class="card__city">Pittsburgh, PA</p>
-      </div>
-      <picture class="card__thumbnail">
-        <img src="/dist/assets/orators/brad@3x.jpg" alt="Brad Frost">
-      </picture>
-    </section>
-
+    
+    
   </section>
 
   <section class="contact">
@@ -152,7 +56,7 @@
     <p class="contact__desc">Submit it for the next event by filling out the form below. Do not forget to specify the subject and the related keywords.</p>
     <form class="contact__form">
 
-        <input type="text" placeholder="Name" ="nom" name="nom" required>
+        <input type="text" placeholder="Name" name="nom" required>
   
         <input type="email" placeholder="Mail" id="mail" name="mail" required>
 
@@ -164,12 +68,9 @@
     
         <button type="submit">Envoyer</button>
     </form>
-    
   </section>
-
 </main>
-
-
+<script src="/dist/scripts/main.js"></script>
 </body>
 
 </html>

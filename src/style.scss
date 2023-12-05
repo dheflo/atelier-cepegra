@@ -7,9 +7,18 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   padding: 3rem;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(8, 38, 8);
 }
 
 p,
@@ -19,45 +28,101 @@ picture {
   padding: 0;
 }
 
-/* CARDS */
-.card {
-  font-family: 'Museo';
-  border: 1px solid rgb(0, 85, 255);
+
+.speakers {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: start;
-  margin-block-end: 1rem;
 
-  &__id {
+  /* CARDS INACTIVE*/
+  .card {
+    font-family: 'Museo';
+    border: 1px solid rgb(0, 85, 255);
     display: flex;
-    flex-direction: column;
-    border: 1px solid green;
+    justify-content: space-between;
+    align-items: start;
 
-    h2 {
+    &__id {
       display: flex;
       flex-direction: column;
-      margin-block-end: 0.5rem;
-      font-size: 1.15rem;
+      justify-content: space-between;
+      border: 1px solid green;
+
+      &--active {
+        gap: 2.5rem;
+        padding-block: 2rem 1rem;
+        background-color: $color__card--active;
+      }
+
+      h2 {
+        display: flex;
+        flex-direction: column;
+        margin-block-end: 0.35rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+
+      }
+    }
+
+    &__thumbnail {
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        max-height: 4.75rem;
+        width: 100%;
+        display: block;
+      }
+    }
+
+    &__city {
+      font-family: 'League Spartan Variable';
+      font-size: 1.1rem;
+      color: $color__secondary--opacity;
+      border: 1px solid blue;    }
+  }
+
+
+  /* CARDS ACTIVE*/
+  .card__offline {
+    font-family: 'League Spartan Variable';
+    font-size: 1.6rem;
+
+    &--text {
+      margin-block-start:0.59rem;
+      font-size: 0.9rem;
+      font-weight: 500;
     }
   }
 
-  &__thumbnail {
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid red;
+  .card__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
 
-    img {
-      max-height: 4.25rem;
-      width: 100%;
-      display: block;
+    &--time {
+      font-family: 'Maven Pro';
+      font-weight: 900;
     }
-  }
 
-  &__city {
-    color: $color__secondary;
+    &--cta {
+      font-family: 'League Spartan Variable';
+      text-transform: uppercase;
+      color: $color__cta;
+      padding: 0.5rem 1.5rem 0.5rem 6rem;
+      border: 1px solid $color__cta;
+      border-radius: 20px;
+    }
+
+
   }
 }
 
+
+
+/* FORM */
 .contact {
   display: flex;
   flex-direction: column;

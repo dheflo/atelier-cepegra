@@ -21,15 +21,118 @@
   font-style: normal;
   font-variation-settings: "wght" 400, "wght" 900;
 }
+/* Codeconf : icon font */
+@font-face {
+  font-family: "codeconf";
+  src: url("fonts/codeconf.ttf") format("truetype"), url("fonts/codeconf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "codeconf" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-burger:before {
+  content: "\e93e";
+}
+
+.icon-schedule:before {
+  content: "\e93f";
+}
+
+.icon-loop:before {
+  content: "\e940";
+}
+
+.icon-contact:before {
+  content: "\e941";
+}
+
+.icon-event:before {
+  content: "\e942";
+}
+
+.icon-home:before {
+  content: "\e943";
+}
+
+.icon-card:before {
+  content: "\e944";
+}
+
+.icon-paypal:before {
+  content: "\e945";
+}
+
+.icon-tw:before {
+  content: "\e946";
+}
+
+.icon-slack:before {
+  content: "\e947";
+}
+
+.icon-heart_full:before {
+  content: "\e948";
+}
+
+.icon-heart_line:before {
+  content: "\e949";
+}
+
+.icon-square_full:before {
+  content: "\e94a";
+}
+
+.icon-square_line:before {
+  content: "\e94b";
+}
+
+.icon-spade_full:before {
+  content: "\e94c";
+}
+
+.icon-spade_line:before {
+  content: "\e94d";
+}
+
+.icon-clover_full:before {
+  content: "\e94e";
+}
+
+.icon-clover_line:before {
+  content: "\e94f";
+}
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   padding: 3rem;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(8, 38, 8);
 }
 
 p,
@@ -39,40 +142,83 @@ picture {
   padding: 0;
 }
 
-/* CARDS */
-.card {
+.speakers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* CARDS INACTIVE*/
+  /* CARDS ACTIVE*/
+}
+.speakers .card {
   font-family: "Museo";
   border: 1px solid rgb(0, 85, 255);
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-block-end: 1rem;
 }
-.card__id {
+.speakers .card__id {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border: 1px solid green;
 }
-.card__id h2 {
+.speakers .card__id--active {
+  gap: 2.5rem;
+  padding-block: 2rem 1rem;
+  background-color: hsl(21, 100%, 95%);
+}
+.speakers .card__id h2 {
   display: flex;
   flex-direction: column;
-  margin-block-end: 0.5rem;
-  font-size: 1.15rem;
+  margin-block-end: 0.35rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
-.card__thumbnail {
+.speakers .card__thumbnail {
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid red;
 }
-.card__thumbnail img {
-  max-height: 4.25rem;
+.speakers .card__thumbnail img {
+  max-height: 4.75rem;
   width: 100%;
   display: block;
 }
-.card__city {
-  color: hsl(253, 23%, 34%);
+.speakers .card__city {
+  font-family: "League Spartan Variable";
+  font-size: 1.1rem;
+  color: hsla(253, 23%, 34%, 0.35);
+  border: 1px solid blue;
+}
+.speakers .card__offline {
+  font-family: "League Spartan Variable";
+  font-size: 1.6rem;
+}
+.speakers .card__offline--text {
+  margin-block-start: 0.59rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.speakers .card__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+.speakers .card__info--time {
+  font-family: "Maven Pro";
+  font-weight: 900;
+}
+.speakers .card__info--cta {
+  font-family: "League Spartan Variable";
+  text-transform: uppercase;
+  color: hsl(13, 93%, 54%);
+  padding: 0.5rem 1.5rem 0.5rem 6rem;
+  border: 1px solid hsl(13, 93%, 54%);
+  border-radius: 20px;
 }
 
+/* FORM */
 .contact {
   display: flex;
   flex-direction: column;
