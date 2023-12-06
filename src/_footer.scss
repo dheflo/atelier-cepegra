@@ -27,13 +27,15 @@ footer {
     border: 1px solid $color__footer-infos--opacity;
     border-radius: 11rem;
 
-    //icon
+    //icon geloc
     &::before {
       font-family: 'codeconf';
       content: "\e941";
       color: $color__footer-infos;
       margin-inline-end: 1rem;
     }
+
+
   }
 
   &-desc {
