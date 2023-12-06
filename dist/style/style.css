@@ -126,8 +126,11 @@ html {
 }
 
 body {
-  padding: 3rem;
   margin: 0;
+}
+
+main {
+  padding: 3rem;
 }
 
 a {
@@ -142,6 +145,66 @@ picture {
   padding: 0;
 }
 
+/* ------------- HEADER -------------  */
+/* MAIN NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+}
+
+.nav__logo img {
+  height: 3.5rem;
+}
+
+/* HERO */
+.hero {
+  background-color: hsl(248, 78%, 60%);
+  width: 100vw;
+  height: 11rem;
+  position: relative;
+}
+.hero__stripes--left {
+  position: absolute;
+  top: -0.75rem;
+  left: 0;
+}
+.hero__stripes--left img {
+  height: 1.5rem;
+}
+.hero__stripes--right {
+  position: absolute;
+  top: -0.75rem;
+  right: 0;
+}
+.hero__stripes--right img {
+  height: 1.5rem;
+}
+.hero__speaker {
+  position: absolute;
+  bottom: -0.24rem;
+  left: 25%;
+}
+.hero__speaker img {
+  height: 14rem;
+}
+.hero__title {
+  margin-inline: 3rem;
+  font-family: "Museo";
+  font-weight: 700;
+  font-size: 3rem;
+  color: hsl(38, 22%, 93%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  position: absolute;
+  top: 1.5rem;
+}
+
+/* ------------- SPEAKERS -------------  */
 .speakers {
   display: flex;
   flex-direction: column;
@@ -160,7 +223,6 @@ picture {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid green;
 }
 .speakers .card__id--active {
   gap: 2.5rem;
@@ -173,6 +235,12 @@ picture {
   margin-block-end: 0.35rem;
   font-size: 1.3rem;
   font-weight: 700;
+}
+.speakers .card--active {
+  display: none;
+}
+.speakers .card--inactive {
+  display: flex;
 }
 .speakers .card__thumbnail {
   border-radius: 50%;
@@ -187,7 +255,6 @@ picture {
   font-family: "League Spartan Variable";
   font-size: 1.1rem;
   color: hsla(253, 23%, 34%, 0.35);
-  border: 1px solid blue;
 }
 .speakers .card__offline {
   font-family: "League Spartan Variable";
