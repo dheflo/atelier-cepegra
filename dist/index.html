@@ -16,36 +16,34 @@
         <a href="#"><img src="/dist/assets/logos/logo2023.svg" alt="Logo CodeConf 2022"></a>
       </picture>
       <div class="nav__links">
-        <span class="nav__links--items icon icon-home"></span>
         <span class="nav__links--items icon icon-schedule"></span>
+        <span class="nav__links--items icon icon-burger"></span>
       </div>
     </nav>
 
     <section class="hero">
-      <picture class="hero__stripes--left">
+      <picture class="hero__stripes-left">
         <img src="/dist/assets/elts/pattern-stripes-left.png" alt="pattern color stripes">
       </picture>
-      <picture class="hero__stripes--right">
+      <picture class="hero__stripes-right">
         <img src="/dist/assets/elts/pattern-stripes-right.png" alt="pattern color stripes">
       </picture>
       <picture class="hero__speaker">
         <img src="/dist/assets/page-picture/presents@2x.png" alt="speaker talking">
       </picture>
       <h1 class="hero__title">Speaker<span class="hero__title--edition">Edition 2023</span></h1>
-
     </section>
+
   </header>
+
   <main>
-
-
-
     <!--------------------SPEAKERS------------------->
     <section class="speakers">
 
       <div class="breadcrumb">
-       <a href="#"><span class="breadcrumb__home icon icon-home"></span></a>
-          <span class="breadcrumb__line">|</span>
-          <a href="#"><span class="breadcrumb__text">Speakers</span></a>
+        <a href="#"><span class="breadcrumb__home icon icon-home"></span></a>
+        <span class="breadcrumb__line">|</span>
+        <a href="#"><span class="breadcrumb__text">Speakers</span></a>
       </div>
 
       <!-- Chris Coyier -->
@@ -67,13 +65,11 @@
             <p class="card__offline--text">You can re-visit my Web site even when you're not connected to the Internet
             </p>
           </div>
-
           <p class="card__info">
             <span class="card__info--time"><span class="icon icon-schedule"></span> 10h15 | R2</span>
             <a class="card__info--cta" href="#">About</a>
           </p>
       </section>
-
 
       <!-- Sara Soueidan -->
       <section class="card card--inactive">
@@ -378,8 +374,9 @@
 
         <button type="submit">Send your subject</button>
       </form>
-
-      <p class="contact__alternative-text">or just participate to the present event...</p>
+      <div class="contact__alternative-text">
+        <span>or just participate to</span> <span>the present event...</span>
+      </div>
       <div class="cta">
         <div class="cta__btn">
           <a href="#" class="cta__tickets">
@@ -391,7 +388,6 @@
           </a>
         </div>
         <span class="cta__price">$199 USD</span>
-
       </div>
 
 
@@ -399,27 +395,45 @@
 
   </main>
 
-  <footer>
-    <h3 class="footer__title">The Las Vegas Convetion Center</h3>
-    <span class="footer__adress">3150 Paradise Rd, Las Vegas, NV 89109</span>
-    <p class="footer__desc">The Las Vegas Convention Center (LVCC), located adjacent to the Las Vegas Strip, encompasses
-      approximately 3.2 million square feet with exhibit space of 2 million square feet and meeting space of nearly
-      250,000 square feet.</p>
-    <p class="footer__helpdesk">Helpdesk Call-center +1 702-892-0711
-      <span class="footer__helpdesk-support">(speaker's support)</span>
-    </p>
+  <!-------- FOOTER -------->
 
-    <div class="footer__partners">
-      <picture class="partners-logo"><img src="/dist/assets/logos/cisco.svg" alt="Cisco logo"></picture>
-      <picture class="partners-logo amazon"><img src="/dist/assets/logos/amazon_s3.svg" alt="Amazon services logo">
-      </picture>
-      <picture class="partners-logo nick"><img src="/dist/assets/logos/nick.svg" alt="Nick logo"></picture>
-      <picture class="partners-logo meetup"><img src="/dist/assets/logos/meetup.svg" alt="Meetup logo"></picture>
-      <picture class="partners-logo stripe"><img src="/dist/assets/logos/stripe.svg" alt="Stripe logo"></picture>
-      <picture class="partners-logo mailchimp"><img src="/dist/assets/logos/mailchimp.svg" alt="Mailchimp logo">
-      </picture>
+  <footer>
+    <div class="footer__info">
+      <h3 class="footer__info-title">The Las Vegas Convetion Center</h3>
+      <p class="footer__info-address">3150 Paradise Rd, Las Vegas, NV 89109</p>
+      <p class="footer__info-desc">The Las Vegas Convention Center (LVCC), located adjacent to the Las Vegas Strip,
+        encompasses
+        approximately 3.2 million square feet with exhibit space of 2 million square feet and meeting space of nearly
+        250,000 square feet.</p>
+      <p class="footer__info-helpdesk">Helpdesk Call-center +1 702-892-0711
+        <span class="footer__info-helpdesk-support">(speaker's support)</span>
+      </p>
+
+      <div class="footer__info-partners">
+        <picture class="partners-logo"><img src="/dist/assets/logos/cisco.svg" alt="Cisco logo"></picture>
+        <picture class="partners-logo amazon"><img src="/dist/assets/logos/amazon_s3.svg" alt="Amazon services logo">
+        </picture>
+        <picture class="partners-logo nick"><img src="/dist/assets/logos/nick.svg" alt="Nick logo"></picture>
+        <picture class="partners-logo meetup"><img src="/dist/assets/logos/meetup.svg" alt="Meetup logo"></picture>
+        <picture class="partners-logo stripe"><img src="/dist/assets/logos/stripe.svg" alt="Stripe logo"></picture>
+        <picture class="partners-logo mailchimp"><img src="/dist/assets/logos/mailchimp.svg" alt="Mailchimp logo">
+        </picture>
+      </div>
     </div>
+    <div class="footer__follow">
+      <h3 class="footer__follow-title">Follow Us</h3>
+      <div class="footer__follow-social">
+        <span class="footer__follow-social-slack">@codeconf2022</span>
+        <span class="footer__follow-social-twitter">#codeconf2022</span>   
+      </div>
+    </div>
+
+    <p class="footer__copyright">
+      <span>organised by WebeesMeetups.com</span>
+      <span class="footer__copyright-year">copyright 2022</span>
+    </p>
   </footer>
+
   <script src="/dist/scripts/main.js"></script>
 </body>
 

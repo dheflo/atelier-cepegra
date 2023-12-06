@@ -25,7 +25,7 @@ nav {
   height:11rem;
   position: relative;
 
-  &__stripes--left {
+  &__stripes-left {
     position: absolute;
     top:-0.75rem;
     left:0;
@@ -35,7 +35,7 @@ nav {
     }
   }
 
-  &__stripes--right {
+  &__stripes-right {
     position: absolute;
     top:-0.75rem;
     right:0;
@@ -48,22 +48,23 @@ nav {
   &__speaker {
     position:absolute;
     bottom:-0.24rem;
-    left: 25%;
+    left: 22%;
 
     img {
       height: 14rem;
     }
   }
   &__title {
-    margin-inline: 2rem;
-    font-family:'Museo';
-    font-weight: 700;
-    font-size: 3rem;
-    color: $color__header-title;
+    position: absolute;
+    top: 1.5rem;
     display: flex;
     flex-direction: column;
     gap:0.15rem;
-    position: absolute;
-    top: 1.5rem;
+    margin-inline: 2rem;
+    font-family:'Museo', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: $color__header-title;
+   
   }
 }

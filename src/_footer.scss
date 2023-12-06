@@ -1,9 +1,103 @@
 footer {
   background-color: $color__footer-bg;
+}
+
+.footer__info {
   color: $color__card--default;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap:2rem;
-  padding-inline:2rem;
+  gap: 1rem;
+  padding-inline: 2rem;
+  padding-block: 6rem 2rem;
+
+  &-title {
+    text-align: center;
+    font-family: 'Museo';
+    font-size: 1.7rem;
+    color: $color__footer-titles;
   }
+
+  &-address {
+    font-family: 'Maven Pro';
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-block: 1rem;
+    border: 1px solid $color__footer-infos--opacity;
+    border-radius: 11rem;
+
+    //icon
+    &::before {
+      font-family: 'codeconf';
+      content: "\e941";
+      color: $color__footer-infos;
+      margin-inline-end: 1rem;
+    }
+  }
+
+  &-desc {
+    font-family: 'Maven Pro';
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  //Sponsors
+  &-partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .partners-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.footer__follow {
+  font-family: 'Museo';
+  font-size: 1.1rem;
+  color: $color__card--default;
+  border-block: 1px solid $color__footer-infos--opacity;
+  padding: 2rem;
+
+  &-title {
+    color:$color__footer-titles
+  }
+
+  &-social {
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+
+    &-slack::before {
+      font-family: 'codeconf';
+      font-size: 1.6rem;
+      content:"\e947" + " ";
+    }
+
+    &-twitter::before {
+      font-family: 'codeconf';
+      font-size: 1.6rem;
+      content:"\e946" + " ";
+    }
+  }
+}
+
+.footer__copyright {
+  font-family: 'Museo';
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding:2rem;
+  color: $color__card--default;
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+
+  &-year {
+    color: $color__footer-infos;
+  }
+}
