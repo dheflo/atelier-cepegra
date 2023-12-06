@@ -30,14 +30,12 @@
 @font-face {
   font-family: 'codeconf';
   src:
-    url('fonts/codeconf.ttf') format('truetype'),
-    url('fonts/codeconf.woff') format('woff');
+    url('/dist/assets/fonts/codeconf.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: block;
 }
 
-.icon {
+[class *="icon"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'codeconf' !important;
   //speak: none;

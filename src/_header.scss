@@ -1,0 +1,77 @@
+/* MAIN NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  margin:0;
+  width: 100vwzzzzzzzzzzzzz;
+}
+
+.nav__logo img{
+  height: 3.5rem;
+}
+
+/* HERO */
+.hero {
+  background-color: $color__primary;
+  width:100%;
+  height:11rem;
+  position: relative;
+
+  &__stripes--left {
+    position: absolute;
+    top:-0.75rem;
+    left:0;
+
+    img {
+      height: 1.5rem;
+    }
+  }
+
+  &__stripes--right {
+    position: absolute;
+    top:-0.75rem;
+    right:0;
+    
+    img {
+      height: 1.5rem;
+    }
+  }
+
+  &__speaker {
+    position:absolute;
+    bottom:-0.24rem;
+    left: 25%;
+
+    img {
+      height: 14rem;
+    }
+  }
+  &__title {
+    margin-inline: 2rem;
+    font-family:'Museo';
+    font-weight: 700;
+    font-size: 3rem;
+    color: $color__header-title;
+    display: flex;
+    flex-direction: column;
+    gap:0.15rem;
+    position: absolute;
+    top: 1.5rem;
+  }
+}
+
+
+
+/* ------------- SPEAKERS -------------  */
+.breadcrumb {
+  font-family: 'Museo';
+  font-weight: 700;
+  font-size: 0.85rem;
+  color:$color__primary;
+  margin-block-end: 2rem;
+  padding-inline: 2rem;
+}

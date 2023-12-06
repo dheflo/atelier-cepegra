@@ -1,3 +1,4 @@
+// Card swap style on click
 document.addEventListener('DOMContentLoaded', function() {
   const sections = document.querySelectorAll('.card--active, .card--inactive');
 

@@ -278,7 +278,9 @@
            <!-- Paul Irish -->
            <section class="card card--inactive">
             <div class="card__id">
-              <h2>Paul<span class="card__lastname">Irish</span></h2>
+              <h2><span class="card__firstname">Paul</span>
+                <span class="card__lastname">Irish</span>
+              </h2>
               <p class="card__city">Palo Alto, CA</p>
             </div>
             <picture class="card__thumbnail">
@@ -303,7 +305,9 @@
            <!-- Nicole Sullivan -->
            <section class="card card--inactive">
             <div class="card__id">
-              <h2>Nicole<span class="card__lastname">Sullivan</span></h2>
+              <h2>
+                <span class="card__firstname">Nicole</span>
+                <span class="card__lastname">Sullivan</span></h2>
               <p class="card__city">San Francisco, CA</p>
             </div>
             <picture class="card__thumbnail">
@@ -371,14 +375,24 @@
 
         <textarea placeholder="Short details" id="message" name="message" required></textarea>
 
-        <button type="submit">Envoyer</button>
+        <button type="submit">Send your subject</button>
       </form>
 
       <p class="contact__alternative-text">or just participate to the present event...</p>
-
-      <a href="#" class="cta__tickets">
-        <span>get ticket</span> <span>(X)</span> <span>(X)</span>
-      </a>
+<div class="cta">
+  <div class="cta__btn">
+    <a href="#" class="cta__tickets">
+      <span>get ticket</span>
+      <div class="cta__tickets-payment--container">
+        <span class="cta__tickets--paypal icon-paypal"></span>
+        <span class="cta__tickets--bankcard icon-card"></span>
+      </div>
+    </a>
+  </div>
+  <span class="cta__price">$199 USD</span>
+ 
+</div>
+      
 
     </section>
     
