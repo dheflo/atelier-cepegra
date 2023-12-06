@@ -7,7 +7,11 @@ nav {
   padding-inline: 2rem;
   padding-block: 1rem;
   margin:0;
-  width: 100vwzzzzzzzzzzzzz;
+  width: 100vw;
+
+  &__links {
+    font-size: 5rem;
+  }
 }
 
 .nav__logo img{
@@ -62,16 +66,4 @@ nav {
     position: absolute;
     top: 1.5rem;
   }
-}
-
-
-
-/* ------------- SPEAKERS -------------  */
-.breadcrumb {
-  font-family: 'Museo';
-  font-weight: 700;
-  font-size: 0.85rem;
-  color:$color__primary;
-  margin-block-end: 2rem;
-  padding-inline: 2rem;
 }

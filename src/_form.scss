@@ -1,0 +1,49 @@
+/* FORM */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-inline: 2rem;
+  padding-block: 7rem;
+  position: relative;
+
+  &__alternatve-text {
+    font-family: 'Museo';
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'League Spartan Variable';
+    text-transform: uppercase;
+    font-weight: 750;
+    font-size: 2rem;
+    color: $color__primary;
+  }
+
+  &__baseline {
+    font-family: 'Museo';
+    font-size: 1.5rem;
+    margin-inline: 5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__desc {
+    font-family: 'Maven Pro';
+    text-align: center;
+    line-height: 1.5;
+    margin-inline: 2rem;
+  }
+
+  .contact__form {
+    font-family: 'Maven Pro';
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input {
+      border: none;
+    }
+  }
+}
