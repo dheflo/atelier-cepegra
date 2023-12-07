@@ -351,118 +351,36 @@ footer {
   justify-content: space-between;
   padding-block: 2rem;
   background-color: hsl(0, 0%, 98%);
-  /* CARDS INACTIVE*/
-  /* CARDS ACTIVE*/
-}
-.speakers .card {
-  width: 100%;
-  font-family: "Museo";
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  padding-block: 1.5rem;
-  padding-inline: 2rem;
-  border: 1px solid red;
-}
-.speakers .card__id {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.speakers .card__id--active {
-  gap: 2.5rem;
-  padding-block: 2rem 1rem;
-  background-color: hsl(21, 100%, 95%);
-}
-.speakers .card__id h2 {
-  display: flex;
-  flex-direction: column;
-  margin-block-end: 0.35rem;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-.speakers .card--active {
-  display: none;
-}
-.speakers .card--inactive {
-  display: flex;
-}
-.speakers .card__thumbnail {
-  border-radius: 50%;
-  overflow: hidden;
-}
-.speakers .card__thumbnail img {
-  max-height: 4.75rem;
-  width: 100%;
-  display: block;
-}
-.speakers .card__city {
-  font-family: "League Spartan Variable";
-  font-size: 1.1rem;
-  color: hsla(253, 23%, 34%, 0.35);
-}
-.speakers .card__offline {
-  font-family: "League Spartan Variable";
-  font-size: 1.6rem;
-}
-.speakers .card__offline--text {
-  margin-block-start: 0.59rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-.speakers .card__info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1rem;
-}
-.speakers .card__info--time {
-  font-family: "Maven Pro";
-  font-weight: 900;
-}
-.speakers .card__info--cta {
-  font-family: "League Spartan Variable";
-  text-transform: uppercase;
-  color: hsl(13, 93%, 54%);
-  padding: 0.5rem 1.5rem 0.5rem 6rem;
-  border: 1px solid hsl(13, 93%, 54%);
-  border-radius: 20px;
 }
 
-/* CARDS INACTIVE*/
 .card {
-  width: 100%;
-  font-family: "Museo";
+  background-color: hsl(0, 0%, 98%);
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  padding-block: 1.5rem;
-  padding-inline: 2rem;
+  align-items: center;
   border: 1px solid red;
 }
 .card__id {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  font-family: "Museo";
+  color: hsl(253, 23%, 34%);
 }
-.card__id--active {
-  gap: 2.5rem;
-  padding-block: 2rem 1rem;
-  background-color: hsl(21, 100%, 95%);
-}
-.card__id h2 {
+.card__id-names {
   display: flex;
   flex-direction: column;
-  margin-block-end: 0.35rem;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.25rem;
 }
-.card--active {
+.card__city {
+  font-family: "League Spartan Variable";
+  color: hsla(253, 23%, 34%, 0.35);
+}
+.card__offline {
   display: none;
 }
-.card--inactive {
-  display: flex;
+.card__info {
+  display: none;
 }
 .card__thumbnail {
   border-radius: 50%;
@@ -473,41 +391,64 @@ footer {
   width: 100%;
   display: block;
 }
-.card__city {
-  font-family: "League Spartan Variable";
-  font-size: 1.1rem;
-  color: hsla(253, 23%, 34%, 0.35);
-}
 
-/* CARDS ACTIVE*/
-.card__offline {
-  font-family: "League Spartan Variable";
-  font-size: 1.6rem;
-}
-.card__offline--text {
-  margin-block-start: 0.59rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.card__info {
+.card-active {
   display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 3rem;
+  background-color: hsl(21, 100%, 95%);
+  padding: 2rem;
+  border: 1px solid red;
+}
+.card-active__id {
+  font-family: "Museo";
+  color: hsl(253, 23%, 34%);
+}
+.card-active__id-names {
   flex-direction: row;
+  font-size: 1.25rem;
+}
+.card-active__id-lastname::before {
+  content: "";
+  margin-inline-start: 0.3rem;
+}
+.card-active__city {
+  display: none;
+}
+.card-active__offline {
+  display: flex;
+  flex-direction: column;
+  font-family: "League Spartan Variable";
+}
+.card-active__offline-title {
+  font-size: 1.5rem;
+}
+.card-active__offline-text {
+  margin-block-start: 0.59rem;
+  font-size: 1rem;
+  font-weight: 450;
+}
+.card-active__info {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.card-active__info-time {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 900;
   font-size: 1rem;
 }
-.card__info--time {
-  font-family: "Maven Pro";
-  font-weight: 900;
-}
-.card__info--cta {
+.card-active__info-cta {
   font-family: "League Spartan Variable";
   text-transform: uppercase;
   color: hsl(13, 93%, 54%);
   padding: 0.5rem 1.5rem 0.5rem 6rem;
   border: 1px solid hsl(13, 93%, 54%);
   border-radius: 20px;
+}
+.card-active__thumbnail {
+  display: none;
 }
 
 main {
