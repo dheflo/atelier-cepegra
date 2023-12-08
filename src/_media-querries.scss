@@ -25,7 +25,9 @@
 
   // -HERO (tablet)- //
   @media screen and (min-width: $mq__tablet) {
-
+    .card:hover .card__thumbnail::before {
+      opacity:1;
+    }
     //nav//
     .nav__logo img {
       height: 5rem;
@@ -75,7 +77,6 @@
       grid-template-columns: repeat(3, 1fr);
       justify-content: space-between;
       justify-items: center;
-      padding-inline-start: 2rem;
       gap: 0rem;
     }
 
@@ -87,6 +88,30 @@
 
       &__thumbnail {
         border-radius: 0;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        --colorPast: 247,145,29;
+
+        &::before {
+          opacity: 0;
+          transition: all .3s;
+          content:"More info";
+          font-family: 'League Spartan Variable',serif;
+          text-transform: uppercase;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          color: $color__card--default;
+          position: absolute;
+          inset: 2.6rem;
+          border-radius: 20rem;
+          background-color: rgb(var(--colorPast));   
+          align-self: center;
+          justify-self: center;
+          box-shadow: 0 0 0 1.3rem rgba(var(--colorPast),0.15);
+        }
 
         img {
           max-height: 18rem;
@@ -96,13 +121,18 @@
 
     //cards active//
     .card-active {
-      //max-width: 14rem;
+      margin-inline-start: 2rem;
       flex-direction: column;
+      align-items: stretch;
       padding: 1rem;
 
       &__info {
         padding: 0;
-        gap: 1.5rem;
+        align-items: center;
+
+        &-time {
+          font-size: 0.75rem;
+        }
 
         &-cta {
           padding-inline-start: 1.5rem;
@@ -110,6 +140,8 @@
       }
     }
   }
+
+
 
   // -HERO (desktop)- //
   @media screen and (min-width: $mq__desktop) {
@@ -144,3 +176,4 @@
     }
 
   }
+

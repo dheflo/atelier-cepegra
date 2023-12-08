@@ -575,6 +575,9 @@ footer {
   }
 }
 @media screen and (min-width: 768px) {
+  .card:hover .card__thumbnail::before {
+    opacity: 1;
+  }
   .nav__logo img {
     height: 5rem;
   }
@@ -613,7 +616,6 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     justify-items: center;
-    padding-inline-start: 2rem;
     gap: 0rem;
   }
   .card {
@@ -624,17 +626,45 @@ footer {
   }
   .card__thumbnail {
     border-radius: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    --colorPast: 247,145,29;
+  }
+  .card__thumbnail::before {
+    opacity: 0;
+    transition: all 0.3s;
+    content: "More info";
+    font-family: "League Spartan Variable", serif;
+    text-transform: uppercase;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: hsl(0, 0%, 98%);
+    position: absolute;
+    inset: 2.6rem;
+    border-radius: 20rem;
+    background-color: rgb(var(--colorPast));
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0 0 0 1.3rem rgba(var(--colorPast), 0.15);
   }
   .card__thumbnail img {
     max-height: 18rem;
   }
   .card-active {
+    margin-inline-start: 2rem;
     flex-direction: column;
+    align-items: stretch;
     padding: 1rem;
   }
   .card-active__info {
     padding: 0;
-    gap: 1.5rem;
+    align-items: center;
+  }
+  .card-active__info-time {
+    font-size: 0.75rem;
   }
   .card-active__info-cta {
     padding-inline-start: 1.5rem;
