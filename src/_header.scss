@@ -1,34 +1,37 @@
 /* MAIN NAV */
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding-inline: 2rem;
+  padding-inline: $margin__primary;
   padding-block: 1rem;
-  margin:0;
+  margin-block-end: $margin__primary;
   width: 100vw;
 
   &__links {
-    font-size: 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    font-size: 1.5rem;
   }
 }
 
-.nav__logo img{
+.nav__logo img {
   height: 3.5rem;
 }
 
 /* HERO */
 .hero {
   background-color: $color__primary;
-  width:100%;
-  height:11rem;
+  width: 100%;
+  height: 11rem;
   position: relative;
 
   &__stripes-left {
     position: absolute;
-    top:-0.75rem;
-    left:0;
+    top: -0.75rem;
+    left: 0;
 
     img {
       height: 1.5rem;
@@ -37,34 +40,49 @@ nav {
 
   &__stripes-right {
     position: absolute;
-    top:-0.75rem;
-    right:0;
-    
+    top: -0.75rem;
+    right: 0;
+
     img {
       height: 1.5rem;
     }
   }
 
   &__speaker {
-    position:absolute;
-    bottom:-0.24rem;
+    position: absolute;
+    bottom: -0.24rem;
     left: 22%;
 
     img {
       height: 14rem;
     }
   }
-  &__title {
+
+  &__text {
     position: absolute;
-    top: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap:0.15rem;
-    margin-inline: 2rem;
-    font-family:'Museo', serif;
-    font-weight: 700;
-    font-size: 3rem;
-    color: $color__header-title;
-   
+    top: 3.8rem;
+    margin-inline: $margin__primary;
+
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      font-family: 'Museo', serif;
+      font-weight: 700;
+      font-size: 3rem;
+      color: $color__header-title;
+    }
+    
+    &-baseline {
+      font-family: 'Maven Pro';
+      font-size: 1rem;
+      max-width: 22rem;
+      font-weight: 300;
+      line-height: 1.3;
+      color: $color__card--default;
+    }
   }
 }

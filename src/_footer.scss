@@ -8,8 +8,8 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-  padding-inline: 2rem;
-  padding-block: 6rem 2rem;
+  padding-inline: $margin__primary;
+  padding-block: 6rem $margin__primary;
 
   &-title {
     text-align: center;
@@ -64,7 +64,7 @@ footer {
   font-size: 1.1rem;
   color: $color__card--default;
   border-block: 1px solid $color__footer-infos--opacity;
-  padding: 2rem;
+  padding: $margin__primary;
 
   &-title {
     color:$color__footer-titles
@@ -93,7 +93,7 @@ footer {
   font-family: 'Museo';
   font-weight: 700;
   font-size: 1.1rem;
-  padding:2rem;
+  padding:$margin__primary;
   color: $color__card--default;
   display: flex;
   flex-direction: column;
