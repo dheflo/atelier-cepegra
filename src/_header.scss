@@ -7,7 +7,7 @@
   padding-inline: $margin__primary;
   padding-block: 1rem;
   margin-block-end: $margin__primary;
-  width: 100vw;
+  width: 100%;
 
   &__links {
     display: flex;
@@ -30,21 +30,24 @@
 
   &__stripes-left {
     position: absolute;
-    top: -0.75rem;
+    top: -1.1rem;
     left: 0;
 
     img {
-      height: 1.5rem;
+      height: 2.21rem;
     }
   }
 
   &__stripes-right {
     position: absolute;
-    top: -0.75rem;
-    right: 0;
+    top: -1.1rem;
+    right: 0rem;
+    overflow: hidden;
+    width: 12.5rem;
+    height:2rem;
 
     img {
-      height: 1.5rem;
+      height: 2rem;
     }
   }
 
@@ -64,7 +67,6 @@
     flex-direction: column;
     top: 3.8rem;
     margin-inline: $margin__primary;
-
 
     &-title {
       display: flex;
